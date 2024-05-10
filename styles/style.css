@@ -1,0 +1,274 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  background-color: #ddd;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  max-width: 360px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section_theme_dark {
+  background-color: #131313;
+  color: white;
+}
+
+.content-section_theme_bright {
+  background-color: #fee42a;
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 360px;
+  padding: 24px 20px;
+  align-items: flex-start;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 12px;
+}
+
+/* .header__menu-item {
+  color: white;
+} */
+
+.header__menu-link {
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.header__menu-item_active {
+  text-decoration: none;
+}
+
+.cover {
+  max-width: 360px;
+  padding: 8px 20px;
+  background-image: url(../images/cover.svg);
+  background-repeat: no-repeat;
+  background-size: 95% auto;
+  background-position: bottom right;
+}
+
+.cover__title {
+  text-align: justify;
+  width: 100%;
+  color: #fff;
+  font-family: 'EB Garamond', Times, serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 100%; /* 72px */
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.cover-image {
+  width: 339px;
+  flex-shrink: 0;
+}
+
+.intro {
+  padding: 30px 20px 38px;
+  gap: 24px;
+}
+
+.intro__heading {
+  display: flex;
+  max-width: 320px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro__title {
+  max-width: 203px;
+  flex-shrink: 0;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+.intro__date {
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
+
+.intro__main-text {
+  color: #f5f5f5;
+}
+
+.reasons {
+  padding: 40px 20px;
+  gap: 32px;
+}
+
+.content-section__subtitle {
+  text-align: justify;
+  width: 100%;
+  font-family: 'EB Garamond', Times, serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 115%;
+}
+
+.content-section__introduction {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.content-section__list {
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* .content-section__list-item {
+  padding: 0 0 16px;
+} */
+
+.content-section__list-accent {
+  font-weight: 700;
+}
+
+.how-to {
+  padding: 40px 20px 60px;
+  gap: 32px;
+}
+
+.cards-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card_theme_dark {
+  background-color: #343434;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+  color: #131313;
+}
+
+/* .card_text-only {
+} */
+
+.card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* .card__author-photo {
+} */
+
+.card__author-name {
+  font-weight: 700;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__title {
+  font-family: 'EB Garamond', Times, serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+/* .card__text {
+} */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #fee42a;
+}
+
+.footer__copy {
+  color: #f5f5f5;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* color: #f5f5f5; */
+  font-size: 14px;
+  gap: 16px;
+  list-style: none;
+}
+
+.footer__social-link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
